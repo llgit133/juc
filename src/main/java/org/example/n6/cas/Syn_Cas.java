@@ -1,11 +1,8 @@
-package org.example.cas;
-
-import org.example.n3.TestFrames;
-import org.example.n3.TestJoin;
+package org.example.n6.cas;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Demo {
+public class Syn_Cas {
     static Integer num  = 0;
 
 
@@ -57,10 +54,10 @@ public class Demo {
         }
     }
     public static void main(String[] args) {
-
+//
 //        Test1();
-        Test2();
-//        Test3();
+//        Test2();
+        Test3();
     }
 
 }

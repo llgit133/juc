@@ -1,4 +1,4 @@
-package org.jvm.jvm1;
+package org.jvm.n1;
 
 
 public class Test {
