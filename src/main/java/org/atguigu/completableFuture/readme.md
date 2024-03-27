@@ -14,7 +14,7 @@ Future 接口可以为主线程开一个分支任务，专门为主线程处理�
 ● 结论：Future对于结果的获取不是很友好，只能通过阻塞或轮询的方式得到任务的结果。
 
 
-Future 完成一些复杂的任务
+Future 完成一些复杂的任务 java 5
 ● 对于简单的业务场景使用Future完全ok
 ● 回调通知：
     ○ 应对Future的完成时间，完成了可以告诉我，也就是我们的回调通知
@@ -32,5 +32,30 @@ Future 完成一些复杂的任务
 
 于是产生更强大的CompletableFuture
 
+
+
 可完成
-CompletableFuture对Future的改进
+CompletableFuture对Future的改进  java 8
+
+CompletionStage 任务的步骤，一步步    实现异步任务编排                  
+根据CompletableFuture依赖数量 零依赖、单依赖、双重依赖和多重依赖
+
+不用new 而是用静态的方法, runAsync（无返回值）  supplyAsync（有返回值）
+4个静态方法：对应的 noreturn (demo1 demo2)   has return(demo3 demo4) 
+
+
+注意：
+使用的默认的ForkJoinPool.commonPool-worker-9 类似于守护线程，当main函数结束时，CompletableFutur中的ForkJoinPool也会关闭 导致异步任务未完成
+在实际的工作中 要写自己自定义的线程池
+
+
+都能从 CompletableFuture 中获取结果
+但是 join 和 get 的区别 编译的时候是否报出检查机制 
+
+CompletableFuture优点：
+● 异步任务结束时，会自动回调某个对象的方法
+● 主线程设置好回调后，不用关心异步任务的执行，异步任务之间可以顺序执行
+● 异步任务出错时，会自动回调某个对象的方法
+
+
+
