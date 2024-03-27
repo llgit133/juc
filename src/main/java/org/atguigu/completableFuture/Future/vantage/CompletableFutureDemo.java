@@ -1,4 +1,4 @@
-package org.atguigu.completableFuture;
+package org.atguigu.completableFuture.Future.vantage;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

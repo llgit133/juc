@@ -1,4 +1,4 @@
-package org.atguigu.ThreadStart;
+package org.atguigu.basic.ThreadStart;
 
 public class ThreadDemo {
     public static void main(String[] args) {

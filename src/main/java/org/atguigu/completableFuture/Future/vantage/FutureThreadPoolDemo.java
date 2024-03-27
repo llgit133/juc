@@ -1,4 +1,4 @@
-package org.atguigu.completableFuture;
+package org.atguigu.completableFuture.Future.vantage;
 
 
 import java.util.concurrent.*;
@@ -10,19 +10,19 @@ public class FutureThreadPoolDemo {
         long startTime = System.currentTimeMillis();
         ExecutorService threadPool = Executors.newFixedThreadPool(5);
         FutureTask<String> futureTask1 = new FutureTask<String>(() -> {
-            try {TimeUnit.MICROSECONDS.sleep(500);} catch (InterruptedException e) {e.printStackTrace();}
+            try {TimeUnit.SECONDS.sleep(5);} catch (InterruptedException e) {e.printStackTrace();}
             return "task1 over";
         });
         threadPool.submit(futureTask1);
 
         FutureTask<String> futureTask2 = new FutureTask<String>(() -> {
-            try {TimeUnit.MICROSECONDS.sleep(300);} catch (InterruptedException e) {e.printStackTrace();}
+            try {TimeUnit.SECONDS.sleep(3);} catch (InterruptedException e) {e.printStackTrace();}
             return "task2 over";
         });
 
         threadPool.submit(futureTask2);
 
-        try {TimeUnit.MICROSECONDS.sleep(300);} catch (InterruptedException e) {e.printStackTrace();}
+        try {TimeUnit.MICROSECONDS.sleep(3);} catch (InterruptedException e) {e.printStackTrace();}
 
         System.out.println(futureTask1.get());
         System.out.println(futureTask2.get());
@@ -33,7 +33,7 @@ public class FutureThreadPoolDemo {
     String totalTime(){
 
         try {
-            TimeUnit.MICROSECONDS.sleep(500);
+            TimeUnit.MICROSECONDS.sleep(5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
