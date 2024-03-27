@@ -1,4 +1,4 @@
-package org.atguigu.completableFuture.CompletableFuture.Demo.hasReturn;
+package org.atguigu.completableFuture.completableFuture.demo.hasReturn;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

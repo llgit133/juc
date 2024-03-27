@@ -1,4 +1,4 @@
-package org.atguigu.completableFuture.Future.drawbacks;
+package org.atguigu.completableFuture.future.drawbacks;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;

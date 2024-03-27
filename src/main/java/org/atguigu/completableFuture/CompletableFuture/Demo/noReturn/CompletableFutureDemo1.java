@@ -1,4 +1,4 @@
-package org.atguigu.completableFuture.CompletableFuture.Demo.noReturn;
+package org.atguigu.completableFuture.completableFuture.demo.noReturn;
 
 
 import java.util.concurrent.CompletableFuture;

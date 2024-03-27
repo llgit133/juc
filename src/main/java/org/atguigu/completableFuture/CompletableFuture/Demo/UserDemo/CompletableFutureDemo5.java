@@ -1,4 +1,4 @@
-package org.atguigu.completableFuture.CompletableFuture.Demo.UserDemo;
+package org.atguigu.completableFuture.completableFuture.demo.userDemo;
 
 import java.util.concurrent.*;
 

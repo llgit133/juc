@@ -1,4 +1,4 @@
-package org.atguigu.completableFuture.Future.vantage;
+package org.atguigu.completableFuture.future.vantage;
 
 
 import java.util.concurrent.*;
